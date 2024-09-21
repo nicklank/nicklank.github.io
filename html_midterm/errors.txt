@@ -1,0 +1,50 @@
+Lesley Vazquez
+Ben Hightower
+Nick Lankau (me)
+
+
+Find_errors
+1.Line 1 missing !DOCTYPE in between carrots before html
+2. Line 4 should say lang= “en” not language=”en”
+3. </head> on line 7 
+4. Line 9 is missing </h1> at the end
+5. Line 11 missing <p> at beginning
+6. Line 13 needs to be <ul> not <ol>
+7. Line 19 has </li> When its supposed to be <li> no slash
+8. Line 26 missing </p> at the end
+9. Line 28 should be image.jpg not Image.png
+10. Line 28 add alt=”big bang theory coding meme” alt text
+11. Line 30 should end with </a> not </img>
+12. Line 39 is missing a slash and should be td not tr = </td>not <tr
+13. Line 45 missing </table>
+14. Line 46 src instead of source
+15. Line 46 “error.jpg” not “error.jpeg”
+16. Line 48 should have <p> 
+17. Line 48 put <s> ___ </s> inside the <p></p> to make it strikethrough
+18. Line 50 use <p style="color:lightgray"> Text </p> instead of “bgcolor”
+19. Line 52 should be <button type =”button”> Click me</button> not <input type ="button" value="Click me"> (make sure to do straight quotation marks and not curly ones)
+20. Line 54 has to have —> at the end
+21. Line 56 close link with </a>
+22. Line 58 <p> should go after <em> 
+23. Line 58 <em> and </em> should both be changed to <u>
+24. Line 64 should end with </h2> not <h3>
+25. Line 60 and 63 change <dl> and </dl> to <ul> </ul> respectively
+
+
+
+find_errors_2
+26. Line 3 No closing </head> statement after 
+27. Line 4 <h1> should be moved into the <body>
+28. Line 5 No closing carrot on <body
+29. Line 6 <html> is not after doctype on line 2
+30. Line 6/2 <html> statement also does not have a “lang” attribute, lang=”en”
+31. Line 8 No closing </div> after implementation
+32. Line 9 Missing closing </strong> statement 
+33. Line 9 Closing the paragraph for “this is an important paragraph” text
+34. Line 11 Image file name is missing an underscore between “image” and “2”
+35. Line 11 Image also does not have an alt attribute
+36. Line 11 src instead of href (for links) for Image
+37. Line 13 Header is missing opening “<h2>”
+38. Line 15 Started paragraph for the ended one “text”
+39. Line 16 Comment is missing “!--” at the beginning, and “--” at the end of the comment
+40. Line 17 Closing </html> statement is literally missing the “l”
