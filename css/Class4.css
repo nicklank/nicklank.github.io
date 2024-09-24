@@ -1,0 +1,33 @@
+
+
+
+p {
+    color: #4b27f3;
+    fant-family: sans-serif;
+    font-size: 150%;
+}
+
+div{
+    color:pink
+}
+
+
+td {
+
+}
+
+
+<!-- class name-->
+ul.basics{
+    color:beige
+}
+
+this is for id's
+#item{
+
+
+}
+
+a:hover{
+    border:#757575
+}
