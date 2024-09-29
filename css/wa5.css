@@ -42,7 +42,7 @@ body {
   }
   .card article
   {
-  background-color:rgba(0,0,0,.5);
+  background-color:rgba(0,0,0,.2);
   height: 12em;
   color: white
   }
