@@ -71,7 +71,7 @@ body {
     width: 35em;
     height: 22em;
     margin: 5em auto;
-    background-color: red;
+    background-color: lightblue;
     border: 0.2em solid black;
     border-radius: 1.5em;
   }
@@ -94,6 +94,7 @@ body {
   {
   background-color:rgba(0,0,0,.5);
   height: 12em;
+  color: white;
   }
   .card2 footer p{
   font-size: 15px;
