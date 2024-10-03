@@ -1,0 +1,82 @@
+cascades
+1 POSITION AND ORDER OF APPEARANCE
+--reads linearly from top to bottom, something below 
+updates the previous information to be most recent
+possible to link multiple style sheets
+
+2 SPECIFICITY - which css selector most important??
+more specific rules will take precedent
+ie. element < class < id
+element least spec, id most
+
+class has weight 10
+
+paragraph would make it 11
+
+
+weight elementn 1
+class 10
+id 100 
+
+example
+
+p{
+
+
+}
+
+
+3 ORIGIN (where css comes from)
+refers to stylesheet is retrieved from, ex-our 
+compure and browser have default stylesheets
+
+4 IMPORTANCE
+css style are address ed in order of importance
+not best practice
+
+!important to override the cascade
+
+everythig in html is rectangle 
+block vs inline
+padding is in beteen border and element
+
+margin is on outide of border of div or box and padding is in between that border and the contenteditable="
+"
+
+box positioning
+
+position: static - default
+pos: relative
+pos: fixed;
+pos: absolute
+pos: sticky
+
+Position changes aria-posinset="
+margin-buble around element, wont touch other elemnst
+can use postiion to put stuff on top of eachether 
+
+positioning
+fixe means even if you scroll, it wil stay in same spot on browser
+sticky means if you scroll past it it will stay at the top of the page
+relative based on where it would default be
+
+lengths
+absolute vs relative
+
+absolutes
+cm, mm, in, px, pt, pc (1 pica = 10px)
+
+relative units - change by device, responsive web
+em - relative to font size of elem
+ex (not often)
+ch - relative
+rem - relative to the font size of the root elem (html)
+most common:
+vw - relative to 1% wiith of the viewport
+vh - 1% of the height
+ex - height: 50vh;
+% - by parent (usually div)
+can change viewport device via the inspect element thing
+
+add text shadow
+text-shadow:1px 1px 1px 1px black
