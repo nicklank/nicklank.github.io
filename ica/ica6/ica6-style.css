@@ -53,10 +53,9 @@ background-size:
         100vw, 
         cover;
     background-position: 
-        top center, /* Position for the top image */
-        bottom center, /* Position for the bottom image */
-        center; /* Position for the gradient (centered) */
-    background-repeat: no-repeat, no-repeat, no-repeat; 
+        top center, 
+        bottom center, 
+    background-repeat: no-repeat, no-repeat; 
 
 }
 
