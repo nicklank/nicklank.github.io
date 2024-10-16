@@ -30,6 +30,7 @@
 #my_grid{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
+    justify-content:
 }
 
 #unicorns_5{
