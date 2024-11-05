@@ -6,7 +6,7 @@ const insertX = ['Spiderman', 'Batman', 'the Green Goblin'];
 const insertY = ['the backyard', 'Mars', 'Australia'];
 const insertZ = ['went to the bathroom', 'had to walk backwards', 'turned into a magic jumping bean'];
 
-const storyText = 'It was a cold dreary Monday, so :insertx: bopped around town. When they got to :inserty:, their jaws dropped, then :insertz:. Bob did a 720 and did a back handspring away, and wasn’t seen again — :insertx: Bob did 30 squats, and then it was all a dream.';
+const storyText = 'It was a cold dreary Monday, so :insertx: bopped around town. When they got to :inserty:, their jaws dropped, then :insertz: and Bob did a 720 and did a back handspring away, and wasn’t seen again — :insertx: Bob did 30 squats, and then it was all a dream.';
 
 randomize.addEventListener('click', result);
 
