@@ -1,0 +1,169 @@
+
+.story {
+    visibility: hidden;
+}
+
+
+/* FONTS */
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 40pt;
+    color:#C3AB77
+  }
+
+  h2, h3, h4, h5 {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25pt;
+  }
+
+  p {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    Color: #573030;
+    font-size: 14pt;
+  }
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 96vh auto auto 90vh 90vh auto;
+    grid-template-areas:
+        "schedule1 schedule2"
+        "content content"
+        "rockspic rockspic"
+        "guildshop faq"
+        "communityed beforeafter"
+        "natureflute natureflute"
+}
+
+.schedule1 {
+    grid-area: schedule1;
+    background-color: #DCCFBF;
+    text-align: center;
+    padding: 5vw;
+    background-image: url("tix.png");
+    background-size: 50vh;
+    background-repeat: no-repeat;
+    background-position-y: 30vh;
+    background-position: center;
+}
+
+.schedule2 {
+    grid-area: schedule2;
+    position: relative;
+    text-align: center;
+    padding: 5vw;
+    background-color: #691221;
+    overflow: hidden; 
+}
+
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('snow.gif');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); 
+    z-index: 0; 
+    opacity: 0.5;
+}
+
+.schedule2wrap {
+    position: relative;
+    z-index: 1; 
+}
+
+.whitetext {
+    color:#FFF2F2
+}
+
+.guildshop {
+    grid-area: guildshop;
+    background-color: #691221;
+    text-align: center;
+    padding: 5vw;
+}
+
+.content {
+    grid-area: content;
+    background-color: #1D0F14;
+    padding: 5vw;
+}
+
+.rosintext {
+    color:#C3AB77
+}
+
+.blacktext {
+    color: #1D0F14;
+}
+
+.faq {
+    grid-area: faq;
+    background-color: #FFF2F2;
+    text-align: center;
+    padding: 5vw;
+}
+
+
+.communityed {
+background-color: #FFF2F2;
+text-align: center;
+padding: 5vw;
+}
+
+.beforeafter {
+background-color: #DCCFBF;
+text-align: center;
+padding: 5vw;
+}
+
+
+  .randomize {
+    padding: 10px 20px;
+    background-color: #691221; 
+    color: #FFF2F2; 
+    border: none; /* No border */
+    border-radius: 0; /* No rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+  }
+  
+
+
+  .randomize:hover {
+    background-color: #C3AB77;
+    color: #FFF2F2;
+  }
+
+
+@media (max-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 90vh 90vh auto 9vh 90vh 90vh 90vh 90vh 9vh;
+        grid-template-areas:
+            "schedule1"
+            "schedule2"
+            "content"
+            "rockspic"
+            "guildshop" 
+            "faq"
+            "beforeafter"
+            "communityed"
+            "natureflute" 
+
+    }
+}
