@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+}
+
+img{
+    max-width: 80vw;
+    height:auto;
+    margin-top: 5vh;
+}
