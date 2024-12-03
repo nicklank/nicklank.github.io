@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" href="gamestyle.css">
+</head>
+
+<body>
+    <h1>Climate Adaptation Game</h1>
+    <div id="stat-bars">
+        <div class="bar-container">
+            <div class="label">CO2 Levels</div>
+            <div class="bar-wrapper">
+                <div class="bar" id="co2"></div>
+            </div>
+        </div>
+        <div class="bar-container">
+            <div class="label">Electricity Grid</div>
+            <div class="bar-wrapper">
+                <div class="bar" id="electricity"></div>
+            </div>
+        </div>
+        <div class="bar-container">
+            <div class="label">Sociopolitical Tensions</div>
+            <div class="bar-wrapper">
+                <div class="bar" id="sociopolitical"></div>
+            </div>
+        </div>
+        <div class="bar-container">
+            <div class="label">Resource Depletion</div>
+            <div class="bar-wrapper">
+                <div class="bar" id="resources"></div>
+            </div>
+        </div>
+        <div class="bar-container">
+            <div class="label">Global Temperature</div>
+            <div class="bar-wrapper">
+                <div class="bar" id="temperature"></div>
+            </div>
+        </div>
+        <div class="bar-container">
+            <div class="label">Biodiversity Loss</div>
+            <div class="bar-wrapper">
+                <div class="bar" id="biodiversity"></div>
+            </div>
+        </div>
+    </div>
+    <div id="word-display">Type this word: <span id="current-word"></span></div>
+    <input type="text" id="word-input" placeholder="Type the word here..." />
+    <button id="start-btn">Start Game</button>
+    <p id="status-message"></p>
+    
+<div id="game-over" class="game-over">
+    <div class="game-over-content">
+        <h1>Game Over!</h1>
+        <p>You failed to keep your city safe!</p>
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+</div>
+
+
+</body>
+
+
+    <script src="game.js"></script>
+</html>

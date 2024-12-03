@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+#stat-bars {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+}
+
+.bar-wrapper {
+    width: 30px;
+    height: 200px; /* Height of the bar */
+    background-color: #ddd;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: green;
+    transition: height 0.3s, background-color 0.3s;
+}
+
+.bar-container {
+    display: flex;
+    align-items: flex-end; /* Align all bars to the bottom */
+    height: 300px; /* Total height of the bars */
+}
+
+
+.bar-level {
+    width: 100%; /* Fill bar width */
+    position: absolute; /* Ensure content aligns inside bar */
+    bottom: 0; /* Start level from the bottom */
+    background-color: green; /* Initial level color */
+}
