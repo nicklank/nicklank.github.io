@@ -5,19 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>game</title>
     <link rel="stylesheet" href="gamestyle.css">
+
+    <!--Doto header font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--Geo static other font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Geo:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Climate Adaptation Game</h1>
+
+    <audio id="backgroundMusic" src="./assets/3am lowpoly parkinglot.mp3" loop></audio>
+    <audio id="levelSound" src="./assets/nextLevel.mp3"></audio>
+
+
+    <h1 class="header">Net Zero: 2050</h1>
+    <h2 class="header" id="level-display">Level 1: 2030</h2>
+    <p id="timer-display">30s</p>
+
+
+
     <div id="stat-bars">
         <div class="bar-container">
-            <div class="label">CO2 Levels</div>
+            <div class="label">CO2 <br> Levels</div>
             <div class="bar-wrapper">
                 <div class="bar" id="co2"></div>
             </div>
         </div>
         <div class="bar-container">
-            <div class="label">Electricity Grid</div>
+            <div class="label">Electricity<br>Grid</div>
             <div class="bar-wrapper">
                 <div class="bar" id="electricity"></div>
             </div>
@@ -47,19 +67,43 @@
             </div>
         </div>
     </div>
-    <div id="word-display">Type this word: <span id="current-word"></span></div>
+
+
+    <div class="typehere" id="word-display">Type this word: <span id="current-word"></span></div>
     <input type="text" id="word-input" placeholder="Type the word here..." />
-    <button id="start-btn">Start Game</button>
     <p id="status-message"></p>
-    
-<div id="game-over" class="game-over">
-    <div class="game-over-content">
+
+
+
+    <div id="introModal" class="modal hidden">
+        <div class="modal-content">
+            <h1 class="header">Welcome to <br>NET ZERO: 2050</h1>
+            <p>
+                A solarpunk typing game where the goal is to make your city carbon neutral by the year 2050.
+            </p>
+            <p>Keep the stat bars from getting full to keep your city safe.</p>
+            <p>Type "start" below to begin:</p>
+            <input type="text" id="introInput" placeholder="Type 'start' to begin">
+            <p>Game and music created by Nick Lankau <br> Background image: "Dear Alice" - Chobani</p>
+        </div>
+    </div>
+
+<div id="gameOverModal" class="modal hidden">
+    <div class="modal-content">
         <h1>Game Over!</h1>
         <p>You failed to keep your city safe!</p>
         <button onclick="restartGame()">Play Again</button>
     </div>
 </div>
 
+<div id="victoryModal" class="modal hidden">
+    <div class="modal-content">
+        <h1>You Won!</h1>
+        <p>You kept your city safe and created a carbon-neutral, net-zero carbon emission society by 2050!</p>
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+</div>
+  
 
 </body>
 
