@@ -5,7 +5,7 @@
         font-style: bold;
         font-variation-settings:
           "ROND" 0;
-        color: orange;
+        color: rgb(160, 104, 0);
 }
 
 
@@ -55,6 +55,7 @@ body::before {
 
 .label {
     margin-bottom: 10px;
+    margin-right: -20px;
     font-weight: bold;
     text-align: center;
     width: 100px;
@@ -62,33 +63,32 @@ body::before {
 
 .bar-wrapper {
     width: 30px;
-    height: 200px; /* Height of the bar */
+    height: 200px;
     background-color: #ddd;
     position: relative;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .bar {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: green;
     transition: height 0.3s, background-color 0.3s;
 }
 
 .bar-container {
     display: flex;
-    align-items: flex-end; /* Align all bars to the bottom */
-    height: 300px; /* Total height of the bars */
+    align-items: flex-end; 
+    height: 300px; 
 }
 
 
 .bar-level {
-    width: 100%; /* Fill bar width */
-    position: absolute; /* Ensure content aligns inside bar */
-    bottom: 0; /* Start level from the bottom */
-    background-color: green; /* Initial level color */
+    width: 100%; 
+    position: absolute; 
+    bottom: 0; 
 }
 
 #introModal {
@@ -99,7 +99,6 @@ body::before {
     transform: translate(-50%, -50%);
     background: white;
     padding: 20px;
-    border: 2px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     z-index: 1000;
@@ -129,7 +128,6 @@ body::before {
     transform: translate(-50%, -50%);
     background: white;
     padding: 20px;
-    border: 2px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
   }
